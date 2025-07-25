@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+}
+body {
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Colored buttons */
+.r, .y, .g, .b {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.r { background-color: #ff4d4d; color: white; }
+.y { background-color: #ffeb3b; color: black; }
+.g { background-color: #4caf50; color: white; }
+.b { background-color: #2196f3; color: white; }
+
+/* Game buttons */
+.btn {
+    margin: 1rem;
+    height: 10rem;
+    width: 10rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Start button */
+.startGame {
+    height: 3.5rem;
+    width: 14rem;
+    background-color: yellow;
+    color: black;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.startGame:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* Flash class */
+.flash {
+    background-color: white;
+}
+
+/* === MEDIA QUERIES FOR RESPONSIVENESS === */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .btn {
+        height: 8rem;
+        width: 8rem;
+    }
+
+    .startGame {
+        width: 12rem;
+        font-size: 1rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    .btn {
+        height: 6rem;
+        width: 6rem;
+        margin: 0.5rem;
+    }
+
+    .startGame {
+        width: 10rem;
+        height: 3rem;
+        font-size: 0.9rem;
+    }
+
+    .container {
+        gap: 0.5rem;
+    }
+}
+
+.rules {
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #555;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.rules h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #ffeb3b;
+}
+
+.rules ol {
+    padding-left: 1.2rem;
+}
+
+
+.flashr{
+    background-color: red;
+}
